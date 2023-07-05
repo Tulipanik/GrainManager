@@ -1,0 +1,36 @@
+th,
+td {
+  font-size: 1.5rem;
+  border: 1px solid grey;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: var(--green);
+  color: white;
+}
+
+th:not(:first-child) {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+
+#cross_table tr td:nth-child(1) {
+  font-weight: bold;
+  color: white;
+  background-color: var(--green);
+}
+
+#cross_table {
+  width: 100vw;
+  height: 100vh;
+  font-size: 1.5rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cross_table table {
+  border-collapse: collapse;
+}

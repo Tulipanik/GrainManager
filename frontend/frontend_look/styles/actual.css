@@ -1,0 +1,77 @@
+@import url("index_style.css");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;1,500&display=swap");
+
+body {
+  color: gray;
+  font-family: "Raleway", "Times New Roman", Times, serif;
+}
+.begin > form {
+  display: inline-block;
+}
+
+.begin > .add {
+  text-align: right;
+}
+
+.sell_sold {
+  font-size: 1.2rem;
+  margin: 100 px;
+}
+
+.no_contracts {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.begin {
+  display: inline-block;
+}
+
+.begin span a {
+  margin-right: 1px;
+  margin-left: auto;
+  text-decoration: none;
+}
+
+.sell_sold {
+  padding: 10px;
+}
+
+.sell_sold .sell {
+  padding: 10px 0px;
+}
+.with_contracts table {
+  width: 90%;
+  margin: auto;
+  padding: 40px;
+  box-shadow: 10px lightgrey;
+}
+
+.with_contracts table th {
+  height: 50px;
+  background-color: var(--green);
+  font-weight: bolder;
+  color: white;
+}
+.with_contracts table td {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.with_contracts table tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+.with_contracts table,
+th,
+td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+}
+
+.with_contracts table tr:hover {
+  background-color: lightgreen;
+}
+
+.Sum {
+  padding: 10px;
+}

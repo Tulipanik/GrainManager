@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;1,500&display=swap");
+
+:root {
+  --green: rgb(105, 191, 78);
+  --green_darker: rgb(79, 135, 61);
+  --transparent: rgba(79, 135, 61, 0);
+  --red_light: #f7c3ce;
+  --red: #ff2b41;
+  --green_return: #31ad31;
+  font-family: "Raleway", sans-serif;
+}
+
+body,
+html {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  position: relative;
+}
+
+.menu {
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.strip {
+  width: 100;
+  height: 1vh;
+  background-color: var(--green);
+}
+
+ul li {
+  display: inline-block;
+  text-size-adjust: 20em;
+  text-decoration: none;
+  width: 10vw;
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+  position: relative;
+  visibility: visible;
+  border-radius: 10px 70% 0 0;
+  background-color: var(--green_darker);
+  transform: translate(-1.9vw);
+  z-index: 0;
+}
+
+ul li .toskew {
+  z-index: 2;
+  transform: skewX(70deg) translate(40px);
+  width: 5vw;
+  padding: 10px 2vw;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--transparent) 10%,
+    var(--green_darker) 20%
+  );
+  border-radius: 0 40% 0 0;
+}
+
+ul li .tostraight {
+  transform: skewX(-70deg) translate(-50px);
+}
+
+.clicked .toskew {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--transparent) 10%,
+    var(--green) 20%
+  );
+  z-index: 2;
+}
+.clicked {
+  background-color: var(--green);
+  z-index: 2;
+}
+
+.menu li span {
+  display: inline-block;
+}
+
+.menu li span a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: white;
+}
+.menu li:hover {
+  background-color: var(--green);
+}
+
+.menu .toskew:hover {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--transparent) 10%,
+    var(--green) 20%
+  );
+}
+
+@media (max-width: 1000px) {
+  ul li .toskew {
+    width: 5vw;
+    transform: skew(70deg) translate(60px);
+  }
+  ul li .tostraight {
+    transform: skewX(-70deg) translate(-60px);
+  }
+  ul li {
+    width: 21vw;
+    border-radius: 10px 300% 0 0;
+    transform: translate(-1.9vw);
+    z-index: 0;
+  }
+}
+
+.error_style {
+  border: 2px solid var(--red);
+}
+
+.error_style::placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  vertical-align: auto;
+  background-color: var(--red_light);
+  color: var(--red);
+}
+
+.container {
+  position: relative;
+}
+
+input:not(#submit) {
+  padding: 7px;
+  width: 40vw;
+  border-color: 1px solid lightgray;
+}
+
+input:focus:not(#submit) {
+  outline: none;
+  border: 5px solid var(--green);
+}
+
+#submit {
+  grid-column: 1 / span 2;
+  grid-row: 5;
+  width: 30%;
+  margin: auto;
+  height: 2rem;
+  background-color: var(--green_darker);
+  border: none;
+  color: white;
+  border-radius: 0 50px 0 50px;
+}
+
+#statement {
+  display: none;
+  height: 100px;
+  background-color: #b0e8b0;
+  border: 1px solid var(--green_return);
+  color: var(--green_return);
+  border-radius: 0 0 10px 10px;
+  font-size: 1.5rem;
+}

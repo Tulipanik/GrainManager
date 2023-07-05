@@ -1,0 +1,147 @@
+.first {
+  margin-top: 20px;
+  display: flex;
+}
+
+button,
+.basic {
+  display: inline-block;
+}
+.basic {
+  margin-left: 2vw;
+  line-height: 170%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 0 60px 0 60px;
+  transform: skew(20deg);
+}
+.basic h1,
+.basic h2 {
+  transform: skew(-20deg);
+}
+
+button {
+  margin-left: auto;
+  width: 20vw;
+  background-color: var(--green_darker);
+  border: none;
+  border-radius: 0 60%;
+  font-size: 1.5rem;
+  color: white;
+  transform: skew(15deg);
+}
+
+button span {
+  transform: skew(-15deg);
+}
+
+button:hover {
+  background-color: var(--green);
+}
+
+.descr {
+  display: flex;
+}
+
+.descr h3 span {
+  display: block;
+}
+
+.descr {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  margin: auto;
+}
+
+#table_data table,
+th,
+td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+}
+thead {
+  background-color: var(--green);
+}
+tbody tr:nth-child(even) {
+  background-color: lightgrey;
+}
+
+tbody tr:hover {
+  background-color: lightgreen;
+}
+
+#table_data table {
+  width: auto;
+  margin: auto;
+  margin-top: 30px;
+}
+
+#course_form {
+  margin: auto;
+  display: block;
+}
+
+#course_form form {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(auto, auto);
+}
+
+#course_form form div label {
+  display: block;
+}
+
+#course_form form div {
+  margin: auto;
+}
+
+.input1 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+#course_from form div {
+  display: inline;
+}
+.input {
+  display: block;
+}
+
+.title {
+  background-color: lightgray;
+  padding: 20px;
+  border-radius: 0 0 20px 20px;
+}
+
+#course_form div form input:focus {
+  border-color: var(--green);
+}
+
+.container {
+  min-height: calc(
+    100% -10vh
+  ); /* Adjust the value to leave space for the footer */
+  padding-bottom: 50px; /* Adjust the value to match the height of the footer */
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px; /* Adjust the value to set the height of the footer */
+  background-color: lightgray;
+  text-align: center;
+  justify-content: center;
+}
+
+#edit {
+  bottom: 0;
+  margin: auto;
+  border-radius: 0 20px 0 20px;
+}

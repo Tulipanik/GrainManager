@@ -1,0 +1,23 @@
+{
+  "name": "projekt",
+  "version": "1.0.0",
+  "description": "grain contract app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^23.1.4"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "mongoose": "^7.0.3",
+    "multer": "^1.4.5-lts.1"
+  }
+}

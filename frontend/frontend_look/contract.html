@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index_style.css" />
+    <link rel="stylesheet" href="./styles/contract.css" />
+    <title>WheatManager- Contract</title>
+  </head>
+  <body>
+    <script src="../api/api_frontend.js"></script>
+    <script src="../api/api_frontend_courses.js"></script>
+    <ul class="menu">
+      <li>
+        <span class="toskew"
+          ><span class="tostraight"
+            ><a href="../../index.html">Current</a></span
+          ></span
+        >
+      </li>
+      <li>
+        <span class="toskew"
+          ><span class="tostraight"
+            ><a href="./actual.html">Actual</a></span
+          ></span
+        >
+      </li>
+      <li>
+        <span class="toskew"
+          ><span class="tostraight"
+            ><a href="archive.html">Archive</a></span
+          ></span
+        >
+      </li>
+      <li>
+        <span class="toskew"
+          ><span class="tostraight"><a href="add.html">Add</a></span></span
+        >
+      </li>
+    </ul>
+    <div class="strip"></div>
+    <div class="container">
+      <div id="statement"><span id="statement_text"></span></div>
+      <div class="title">
+        <div class="first">
+          <div class="basic">
+            <h1>Contract number <span id="contract_number"></span></h1>
+            <h2>Company: <span id="company"></span></h2>
+          </div>
+
+          <button id="button" onclick="addToArchive()">
+            <span>archive</span>
+          </button>
+        </div>
+
+        <div class="descr">
+          <h3>Grain: <span id="grain"></span></h3>
+          <h3>Price: <span id="price"></span></h3>
+          <h3>to Sell: <span id="toSell"></span></h3>
+          <h3>Sold: <span id="sold"></span></h3>
+        </div>
+      </div>
+      <div id="course_form">
+        <form>
+          <div class="input1">
+            <label for="date">Date:</label>
+            <input id="date" name="date" type="date" />
+          </div>
+          <div class="input2">
+            <label for="car">Car:</label>
+            <input list="carData" id="car" name="car" type="text" />
+            <datalist id="carData"></datalist>
+          </div>
+          <div class="input3">
+            <label for="description">Description:</label>
+            <input id="description" name="description" type="text" />
+          </div>
+          <div class="input4">
+            <label for="weight">Weight:</label>
+            <input id="weight" name="weight" type="text" />
+          </div>
+          <div class="input5">
+            <label for="priceSold">Price:</label>
+            <input id="priceSold" name="priceSold" type="text" />
+          </div>
+          <input id="submit" type="submit" onclick="courseValidation(event)" />
+        </form>
+      </div>
+      <div id="table_data"></div>
+
+      <script src="../renderer/contract_renderer.js"></script>
+    </div>
+    <footer id="foot">
+      <button id="edit" onclick="onEdit()">Edit</button>
+    </footer>
+  </body>
+</html>

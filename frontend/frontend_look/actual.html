@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index_style.css" />
+    <link rel="stylesheet" href="./styles/actual.css" />
+    <title>WheatManager- Actual</title>
+  </head>
+  <body>
+    <ul class="menu" table>
+      <li>
+        <span class="toskew"
+          ><span class="tostraight"
+            ><a href="../../index.html">Current</a></span
+          ></span
+        >
+      </li>
+      <li class="clicked">
+        <span class="toskew"
+          ><span class="tostraight"
+            ><a href="actual.html">Actual</a></span
+          ></span
+        >
+      </li>
+      <li>
+        <span class="toskew"
+          ><span class="tostraight"
+            ><a href="./archive.html">Archive</a></span
+          ></span
+        >
+      </li>
+      <li>
+        <span class="toskew"
+          ><span class="tostraight"><a href="./add.html">Add</a></span></span
+        >
+      </li>
+    </ul>
+    <div class="strip"></div>
+    <div class="sell_sold">
+      Sell: <span id="sell"></span> Sold: <span id="sold"></span>
+    </div>
+    <div id="product_list">Loading data...</div>
+    <script src="../renderer/actual_renderer.js"></script>
+    <script src="../api/api_frontend.js"></script>
+  </body>
+</html>

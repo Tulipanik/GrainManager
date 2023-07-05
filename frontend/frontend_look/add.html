@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index_style.css" />
+    <link rel="stylesheet" href="./styles/add.css" />
+    <title>WheatManager- Archive</title>
+  </head>
+  <body>
+    <script src="../renderer/add_renderer.js"></script>
+    <script src="../api/api_frontend.js"></script>
+    <ul class="menu">
+      <li>
+        <span class="toskew"
+          ><span class="tostraight"
+            ><a href="../../index.html">Current</a></span
+          ></span
+        >
+      </li>
+      <li>
+        <span class="toskew"
+          ><span class="tostraight"
+            ><a href="./actual.html">Actual</a></span
+          ></span
+        >
+      </li>
+      <li>
+        <span class="toskew"
+          ><span class="tostraight"
+            ><a href="./archive.html">Archive</a></span
+          ></span
+        >
+      </li>
+      <li class="clicked">
+        <span class="toskew"
+          ><span class="tostraight"><a href="add.html">Add</a></span></span
+        >
+      </li>
+    </ul>
+    <div class="strip"></div>
+    <div id="statement">
+      <div id="statement_text"></div>
+      <div id="loading_strip"></div>
+    </div>
+    <div id="adding_elements">
+      <form id="form" onsubmit="validate(event)">
+        <span
+          ><label for="contractNumber">Contract number:</label>
+          <span class="container"
+            ><input
+              type="text"
+              name="contractNumber"
+              id="contractNumber" /></span
+        ></span>
+        <span
+          ><label for="company">Company:</label>
+          <input list="companyData" type="text" name="company" id="company" />
+          <datalist id="companyData"></datalist>
+        </span>
+        <span
+          ><label for="wheat">Grain:</label>
+          <input list="grainData" type="text" name="wheat" id="wheat" />
+          <datalist id="grainData"></datalist>
+        </span>
+        <span
+          ><label for="description">Description:</label>
+          <input type="text" name="description" id="description"
+        /></span>
+        <span
+          ><label for="basicPrice">Price:</label>
+          <input type="text" name="basicPrice" id="price"
+        /></span>
+        <span
+          ><label for="amount">Weight:</label>
+          <input type="text" name="amout" id="weight"
+        /></span>
+        <span
+          ><label for="date">Date:</label>
+          <input type="date" name="date" id="date" />
+        </span>
+        <span id="error"></span>
+
+        <input id="submit" type="submit" />
+      </form>
+      <script>
+        defaultDate();
+      </script>
+    </div>
+  </body>
+</html>
