@@ -17,4 +17,11 @@ To start a program you have to write:
 ````pwsh
 npm start
 ````
+## Views
+* Main view (crossing table)
+* Active view
+* Archive view
+* Add view
+* Contract view
+
 
